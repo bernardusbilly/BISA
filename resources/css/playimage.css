@@ -1,0 +1,167 @@
+/* Playimage.css created on October 2014 */
+
+
+
+/**
+ * img-overlay effect 
+ */
+.img-overlay {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.img-overlay > img {
+	transition: 0.2s;
+	width: 100%;
+	opacity: 0.7;
+	vertical-align: top;
+}
+.img-overlay:hover img {
+	transition: 0.5s;
+	opacity: 1;
+}
+
+
+/** 
+ * img-cover effect 
+ */
+.img-cover {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.img-cover > img {
+	transition: 0.2s;
+	width: 100%;
+	opacity: 1;
+	vertical-align: top;
+}
+.img-cover:hover img {
+	transition: 0.5s;
+	opacity: 0.7;
+}
+
+
+/** 
+ * img-text 
+ * must be put either inside img-overlay or img-cover
+ */
+.img-text {
+	transition-property: top, opacity;
+	transition-duration: 1s, 0.2s;
+	position: absolute;
+	z-index: 1000;
+	color: #FFF;
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	text-align: center;
+}
+.img-overlay:hover .img-text {
+	transition-property: top, opacity;
+	transition-duration: 1s;
+	top: 48%;
+	opacity: 1;
+}
+.img-cover:hover .img-text {
+	transition-property: top, opacity;
+	transition-duration: 1s;
+	top: 48%;
+	opacity: 1;
+}
+
+
+/**
+ * color-effect 
+ */
+.img-black {
+	background: rgb(0, 0, 0);
+}
+.img-white {
+	background: rgb(255, 255, 255);
+}
+.img-red {
+	background: rgb(255, 100, 100);
+}
+.img-green {
+	background: rgb(100, 255, 100);
+}
+.img-blue {
+	background: rgb(100, 100, 255);
+}
+
+
+/**
+ * img-zoom 
+ */
+.img-zoom-in:hover > img {
+	transform: scale(1.2, 1.2);	
+	transition: 0.2s;
+}
+.img-zoom-out > img {
+	transform: scale(1.2, 1.2);
+}
+.img-zoom-out:hover > img {
+	transform: scale(1.0, 1.0);
+	transition: 0.2s;
+}
+
+
+/**
+ * img-compound 
+ * _important_ default transition delay is 1s
+ */
+
+.img-compound {
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+}
+.img-compound > img {
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+}
+
+/**
+ * img-compound extension
+ * not implemented yet
+ */
+.img-compound-delay-2 {
+	transition: 0.2s;
+}
+.img-compound-delay-5 {
+	transition: 0.5s;
+}
+.img-compound-delay-10 {
+	transition: 1.0s;
+}
+.img-compound-delay-15 {
+	transition: 1.5s;
+}
+.img-compound-delay-20 {
+	transition: 2.0s;
+}
+.img-compound-delay-50 {
+	transition: 5.0s;
+}
+
+
+
+/* img-layering */
+.img-layering {
+	overflow: hidden;
+	position: relative;
+}
+.img-layering > img {
+	width: 100%;
+	position: absolute;
+	opacity: 0.1;
+}
+.img-layering-front {
+	z-index: 1000 !important;
+	opacity: 1 !important;
+}

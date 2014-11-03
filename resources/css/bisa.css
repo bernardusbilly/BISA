@@ -1,0 +1,183 @@
+/* bisa.css */
+
+body {
+	font-family: Raleway, Arial;
+}
+a {
+	color: #FDB515;
+}
+a:hover{
+	color: rgb(0, 50 ,98);
+	text-decoration: none;
+}
+#load-page {
+	transition: 0.5s;
+	opacity: 1;
+	position: fixed;
+	z-index: 10000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 50 ,98, 0.95)
+}
+#load-page > div {
+	position: relative; 
+	top: 45%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#infoToHover{
+	position: absolute;
+	z-index: 1000;
+	top: 20%;
+	padding: 10px;
+	background-color: #FDB515;
+	border-radius: 10px;
+	border: 3px solid rgb(0, 50 ,98);
+}
+#officer-header {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	padding: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom: 2px solid #333;
+	border-left: 2px solid #333;
+	background: rgba(255, 255, 255, 0.9);
+	font-size: 20px;
+	color: #333;
+	transition: 1s;
+}
+#photoset-frame {
+	width: 100%;
+}
+#photoset-frame {
+	position: relative;
+	height: auto;
+}
+#photoset-frame > img {
+	position: absolute;
+	opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+}
+#photoset-frame > img:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+}
+#richard-photo {
+	width: 11.26%;
+	top: 31.8%;
+	left: 4.36%;
+}
+#philmon-photo {
+	width: 11.04%;
+	top: 32.99%;
+	left: 14.45%;
+}
+#nathan-photo {
+	width: 10.56%;
+	top: 33.93%;
+	left: 24.25%;
+}
+#farrah-photo {
+	width: 8.96%;
+	top: 34.25%;
+	left: 33.33%;
+}
+#gian-photo {
+	width: 11.74%;
+	top: 29.5%;
+	left: 41.2%;
+}
+#stanley-photo {
+	width: 10.88%;
+	top: 31.87%;
+	left: 52.56%;
+}
+#clarissa-photo {
+	width: 9.33%;
+	top: 34.25%;
+	left: 61.35%;
+}
+#ap-photo {
+	width: 9.58%;
+	top: 33.18%;
+	left: 69.05%;
+}
+#jhame-photo {
+	width: 10.18%;
+	top: 31.40%;
+	left: 76.24%;
+}
+#jusuf-photo {
+	width: 12.75%;
+	top: 30.6%;
+	left: 83.4%;
+}
+#photoset-info {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	overflow: hidden;
+	width: 700px;
+	height: 100px;
+}
+#photoset-info .info {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transition: 0.5s;
+	position: absolute;
+	left: -200%;
+	background: rgba(255,255,255,0.7);
+	font-size: 16px;
+	padding: 10px 20px;
+}
+.info {
+	line-height: 18px;
+}
+.name {
+	font-size: 26px;
+}
+.position {
+	font-size: 12px;
+	color: #888;
+}
+.soc-logo {
+	width: 30px;
+}
+#footer-right {
+	padding-top: 10px;
+}
+
+/* customization-bootstrap */
+.navbar-default {
+	background: rgba(0, 50 ,98, 0.9);
+	border-color: #FDB515;
+}
+.navbar-default .navbar-brand {
+	color: #CCC;
+}
+.navbar-default .navbar-brand:hover {
+	color: #FFF;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #CCC;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #FFF;
+}
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+	background-color: #FDB515;
+}
+.navbar-fixed-top {
+	transition: 0.5s;
+}
+.h1 {
+	font-size: 60px;
+	color: #444;
+}
+

@@ -1,0 +1,161 @@
+/* bisa-responsive.css*/
+
+@media (max-width: 767px) {
+	.intro-section {
+		padding-top: 50px;
+	}
+	#photoset-info {
+		width: 350px;
+		height: 80px;
+		top: 65%;
+	}
+	#photoset-info > .info {
+		font-size: 10px;
+		padding: 10px;
+		line-height: 14px;
+	}
+	#photoset-info > .name {
+		font-size: 20px;
+	}
+	#photoset-info > .position {
+		font-size: 10px;
+	}
+	.h1 {
+		font-size: 40px;
+	}
+	#infoToHover {
+		top: 10%;
+		padding: 5px;
+		font-size: 10px;
+	}
+	.about-section,
+	.events-section,
+	.gallery-section,
+	.contact-section {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	#about-left,
+	#about-right,
+	#events-mobile,
+	#events-right,
+	#gallery-left,
+	#gallery-right,
+	#contact-left,
+	#contact-mobile,
+	#contact-right {
+		padding-top: 50px;
+	}
+	#officer-header {
+		padding: 5px 10px;
+	}
+	.footer-section {
+		min-height: 70%;
+		padding-top: 30%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#photoset-info {
+		width: 500px;
+		height: 58px;
+		top: 18%;
+	}
+	#photoset-info > .info {
+		font-size: 8px;
+		padding: 8px 12px;
+		line-height: 10px;
+	}
+	.name {
+		font-size: 16px;
+	}
+	.position {
+		font-size: 6px;
+	}
+	.about-section,
+	.events-section,
+	.gallery-section,
+	.contact-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	#about-left,
+	#about-right,
+	#events-mobile,
+	#events-left,
+	#events-right,
+	#gallery-left,
+	#gallery-right,
+	#contact-left,
+	#contact-right,
+	#contact-mobile,
+	#contact-right {
+		padding-top: 20px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#photoset-info {
+		width: 700px;
+		height: 80px;
+		top: 15%;
+	}
+	#photoset-info > .info {
+		font-size: 10px;
+		padding: 10px 15px;
+		line-height: 15px;
+	}
+	.name {
+		font-size: 20px;
+	}
+	.about-section,
+	.events-section,
+	.gallery-section,
+	.contact-section {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	#about-right {
+		padding-top: 50px;
+	}
+	#events-mobile {
+		padding-top: 80px;
+	}
+	#gallery-right {
+		padding-top: 80px;
+	}
+	#contact-left {
+		padding-top: 80px;
+	}
+	#events-left {
+		padding-top: 60px;
+	}
+	#events-right {
+		padding-top: 80px;
+	}
+	#gallery-left {
+		padding-top: 120px;
+	}
+	#contact-right{
+		padding-top: 40px;
+	}
+}
+@media (min-width: 1200px) {
+	#photoset-info {
+		width: 800px;
+		height: 95px;
+		top: 18%;
+	}
+	#photoset-info > .info {
+		font-size: 12px;
+		padding: 10px 20px;
+	}
+	.about-section {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+	#events-right {
+		padding-top: 50px;
+	}
+	#gallery-left {
+		padding-top: 80px;
+	}
+}

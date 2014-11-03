@@ -1,0 +1,57 @@
+$(window).load(function() {
+	console.log("BISA.js ready");
+
+	// remove the loading screen when the page is ready
+	$('#load-page').css("opacity", "0");
+	$('#load-page').css("z-index", "-100");
+	
+	// hover effect for officer
+	var names = $('#photoset-frame > img');
+
+	$(names).each(function() {
+		var tmp = $(this).attr('id');
+		var name = tmp.substr(0, tmp.indexOf('-'));
+		var shift_right = $(this).attr('shift');
+		$(this).hasClass('photo')
+
+		if($(this).hasClass('photo')) {
+			$(this).hover(function() {
+				$('#' + name + '-info').css("left", shift_right+"%");
+				$('#photoset-info').css("border-left", "3px solid black");
+				$('#background').css("opacity", 0);
+				$('#background').css("-moz-opacity", 0);
+				$('#background').css("-khtml-opacity", 0);
+				$('#background-bw').css("opacity", "1");
+				$('#background-bw').css("-moz-opacity", 0);
+				$('#background-bw').css("-khtml-opacity", 0);
+			}, function() {
+				$('#' + name + '-info').css("left", "-200%");
+				$('#photoset-info').css("border-left", "0px");
+				$('#background').css("opacity", "1");
+				$('#background').css("-moz-opacity", 1);
+				$('#background').css("-khtml-opacity", 1);
+				$('#background-bw').css("opacity", 0);
+				$('#background-bw').css("-moz-opacity", 0);
+				$('#background-bw').css("-khtml-opacity", 0);
+			});
+		}
+	});
+
+	// when officer page is active then we temporarily hide the navigation bar
+
+	if($('#nav-officer').hasClass("active")) {
+		$('.navbar-fixed-top').css("top", "-51px");
+	} else {
+		$('.navbar-fixed-top').css("top", "0");
+	}
+
+	$(window).scroll(function() {
+		if($('#nav-officer').hasClass("active")) {
+			$('.navbar-fixed-top').css("top", "-51px");
+			$('#officer-header').css("right", "0");
+		} else {
+			$('.navbar-fixed-top').css("top", "0");
+			$('#officer-header').css("right", "-200px");
+		}
+	});
+});
