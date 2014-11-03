@@ -49,9 +49,8 @@
 	#officer-header {
 		padding: 5px 10px;
 	}
-	.footer-section {
+	.officer-section {
 		min-height: 70%;
-		padding-top: 30%;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {

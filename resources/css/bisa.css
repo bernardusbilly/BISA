@@ -38,8 +38,8 @@ a:hover{
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	right: 0;
-	padding: 20px;
+	right: -200px;
+	padding: 10px 20px;
 	border-bottom-left-radius: 10px;
 	border-bottom: 2px solid #333;
 	border-left: 2px solid #333;
@@ -130,7 +130,7 @@ a:hover{
 	transition: 0.5s;
 	position: absolute;
 	left: -200%;
-	background: rgba(255,255,255,0.7);
+	background: rgba(255,255,255,0.8);
 	font-size: 16px;
 	padding: 10px 20px;
 }

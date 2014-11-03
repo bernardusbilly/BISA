@@ -37,12 +37,22 @@ $(window).load(function() {
 		}
 	});
 
+
 	// when officer page is active then we temporarily hide the navigation bar
+	// when we hit the bottom of the page, footer appear
 
 	if($('#nav-officer').hasClass("active")) {
 		$('.navbar-fixed-top').css("top", "-51px");
+		$('#officer-header').css("right", "0");
 	} else {
 		$('.navbar-fixed-top').css("top", "0");
+		$('#officer-header').css("right", "-200px");
+	}
+
+	if ($(window).scrollTop() + $(window).height() >= $(document).height() - 20) {
+		$('.footer-section').css("bottom", "0px");
+	} else {
+		$('.footer-section').css("bottom", "-100px");
 	}
 
 	$(window).scroll(function() {
@@ -53,5 +63,14 @@ $(window).load(function() {
 			$('.navbar-fixed-top').css("top", "0");
 			$('#officer-header').css("right", "-200px");
 		}
+
+		if ($(window).scrollTop() + $(window).height() >= $(document).height() - 20) {
+			$('.footer-section').css("bottom", "0px");
+		} else {
+			$('.footer-section').css("bottom", "-100px");
+		}
 	});
+
+
+	
 });

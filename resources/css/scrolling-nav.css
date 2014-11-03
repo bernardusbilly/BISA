@@ -82,8 +82,13 @@ of those sections to manage the look and feel of the site. */
 }
 
 .footer-section {
-    height: 150px;
-    padding-top: 50px;
+    position: fixed;
+    bottom: -100px;
+    height: 100px;
+    width: 100%;
+    padding-top: 30px;
     text-align: center;
-    background: #888;
+    background: rgba(0,0,0,0.7);
+    color: #CCC;
+    transition: 0.5s;
 }
