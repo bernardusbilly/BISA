@@ -3,6 +3,16 @@
 @media (max-width: 767px) {
 	.intro-section {
 		padding-top: 50px;
+		min-height: 100%;
+		overflow: hidden;
+	}
+	#intro-photo {
+		position: relative;
+		left: -75%;
+		width: 250%;
+	}
+	.officer-section {
+		min-height: 100%;
 	}
 	#photoset-info {
 		width: 350px;
@@ -50,7 +60,8 @@
 		padding: 5px 10px;
 	}
 	.officer-section {
-		min-height: 70%;
+		padding-top: 40%;
+		min-height: 100%;
 	}
 	.footer-section {
 		padding-top: 15px;
