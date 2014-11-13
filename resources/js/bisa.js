@@ -69,6 +69,12 @@ $(window).load(function() {
 		} else {
 			$('.footer-section').css("bottom", "-100px");
 		}
+
+		if($(window).scrollTop() > 30) {
+			$('.arrow-down').css("bottom", "-100px");	
+		} else {
+			$('.arrow-down').css("bottom", "0");
+		};
 	});
 
 

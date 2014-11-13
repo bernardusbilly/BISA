@@ -28,6 +28,17 @@ a:hover{
 #intro-photo {
 	width: 100%;
 }
+.arrow-down {
+	position: fixed;
+	bottom: 0px;
+	background: rgba(0,0,0,0.2);
+	width: 100%;
+	padding-top: 10px;
+	font-size: 50px;
+	color: #FFF;
+	text-align: center;
+	transition: 0.2s;
+}
 #infoToHover{
 	position: absolute;
 	z-index: 1000;
