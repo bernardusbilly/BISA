@@ -35,7 +35,6 @@ of those sections to manage the look and feel of the site. */
     display: block;
     text-align: center;
     background: #fff;
-    color: #888;
 }
 
 .about-section {
@@ -45,7 +44,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 200px;
     text-align: center;
     background: #eee;
-    color: #888;
+    color: #AAA;
 }
 
 .events-section {
@@ -55,6 +54,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 200px;
     text-align: center;
     background: #fff;
+    color: #AAA;
 }
 
 .gallery-section {
@@ -64,6 +64,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 200px;
     text-align: center;
     background: #eee;
+    color: #AAA;
 }
 
 .contact-section {
@@ -73,6 +74,7 @@ of those sections to manage the look and feel of the site. */
     padding-bottom: 200px;
     text-align: center;
     background: #fff;
+    color: #777;
 }
 
 .officer-section {
