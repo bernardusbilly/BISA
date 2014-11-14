@@ -2,14 +2,6 @@
 $(document).ready(function(){
 	console.log("Playimage.js Ready");
 
-	// need update to resize the img-compound whenever parent() is resized
-	$(window).resize(function() {
-		$('.img-compound').each(function() {
-			var image_lead = $(this).find("img:first");
-			$(this).css("height", image_lead.height());
-		});
-	});
-
 	$('.img-compound').each(function() {
 		var image_lead = $(this).find("img:first");
 
@@ -95,6 +87,14 @@ $(document).ready(function(){
 				}
 				$(this).css("z-index", counter);
 			});
+		});
+	});
+
+	// need update to resize the img-compound whenever parent() is resized
+	$(window).resize(function() {
+		$('.img-compound').each(function() {
+			var image_lead = $(this).find("img:first");
+			$(this).css("height", image_lead.height());
 		});
 	});
 });
