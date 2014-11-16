@@ -6,10 +6,9 @@
 		min-height: 100%;
 		overflow: hidden;
 	}
-	#intro-photo {
-		position: relative;
-		left: -75%;
-		width: 250%;
+	.intro-photo {
+		left: -75% !important;
+		width: 250% !important;
 	}
 	.officer-section {
 		min-height: 120%;
