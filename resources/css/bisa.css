@@ -25,6 +25,9 @@ a:hover{
 	margin-left: auto;
 	margin-right: auto;
 }
+#intro-photo {
+	width: 100%;
+}
 .arrow-down {
 	position: fixed;
 	bottom: 0px;
