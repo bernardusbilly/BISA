@@ -1,6 +1,9 @@
 /* bisa-responsive.css*/
 
 @media (max-width: 767px) {
+	#load-page-logo {
+		left: 0%;
+	}
 	.intro-section {
 		padding-top: 50px;
 		min-height: 100%;

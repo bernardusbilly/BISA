@@ -5,6 +5,8 @@ $(document).ready(function(){
 	$('.img-compound').each(function() {
 		var image_lead = $(this).find("img:first");
 
+		$(this).css("height", image_lead.height());
+
 		var counter = 0;
 		var total_image = 0;
 
@@ -37,6 +39,8 @@ $(document).ready(function(){
 				counter = 0;
 			}
 		});
+
+		$(this).append("<span class='glyphicon glyphicon-chevron-right' style='position: absolute; font-size: 26px; right: 5%; top: 5%; color: rgb(255,255,255)'></span>")
 	});
 
 	$('.img-layering').each(function() {

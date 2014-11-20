@@ -1,6 +1,6 @@
 $(window).load(function() {
 	console.log("BISA.js ready");
-
+		
 	// remove the loading screen when the page is ready
 	$('#load-page').css("opacity", "0");
 	$('#load-page').css("z-index", "-100");
@@ -75,8 +75,5 @@ $(window).load(function() {
 		} else {
 			$('.arrow-down').css("bottom", "0");
 		};
-	});
-
-
-	
+	});	
 });
