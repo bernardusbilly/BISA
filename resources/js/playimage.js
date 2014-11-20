@@ -1,5 +1,5 @@
 /* Playimage.js */
-$(document).ready(function(){
+$(window).load(function(){
 	console.log("Playimage.js Ready");
 
 	$('.img-compound').each(function() {
@@ -25,6 +25,13 @@ $(document).ready(function(){
 		});
 
 		// setup hover condition
+		$(this).hover(function() {
+			$(this).find(".photo-arrow").css("visibility", "hidden");
+		}, function() {
+			$(this).find(".photo-arrow").css("visibility", "visible");
+		});
+
+		// setup click function
 		$(this).click(function() {
 			images = $(this).find("img");
 			
@@ -39,8 +46,6 @@ $(document).ready(function(){
 				counter = 0;
 			}
 		});
-
-		$(this).append("<span class='glyphicon glyphicon-chevron-right' style='position: absolute; font-size: 26px; right: 5%; top: 5%; color: rgb(255,255,255)'></span>")
 	});
 
 	$('.img-layering').each(function() {

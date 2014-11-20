@@ -29,6 +29,7 @@ a:hover{
 }
 .intro-photo {
 	width: 100%;
+	position: relative;
 }
 .arrow-down {
 	position: fixed;
@@ -53,14 +54,14 @@ a:hover{
 #officer-header {
 	position: fixed;
 	z-index: 1000;
-	top: 0;
-	right: -200px;
+	top: -100px;
+	left: 38.5%;
 	padding: 10px 20px;
 	border-bottom-left-radius: 10px;
-	border-bottom: 2px solid #333;
-	border-left: 2px solid #333;
+	border-bottom-right-radius: 10px;
+	border: 2px solid #333;
 	background: rgba(255, 255, 255, 0.9);
-	font-size: 20px;
+	font-size: 26px;
 	color: #333;
 	transition: 1s;
 }
@@ -133,14 +134,14 @@ a:hover{
 	left: 83.4%;
 }
 @-webkit-keyframes updown{
-	0% {top: 24%;}
-	50% {top: 26%;}
-	100% {top: 24%;}
+	0% {top: 22%;}
+	50% {top: 24%;}
+	100% {top: 22%;}
 }
 @keyframes updown{
-	0% {top: 24%;}
-	50% {top: 26%;}
-	100% {top: 24%;}
+	0% {top: 22%;}
+	50% {top: 24%;}
+	100% {top: 22%;}
 }
 #info-to-hover {
 	position: absolute;
@@ -148,7 +149,7 @@ a:hover{
 	z-index: 2;
 	font-size: 26px;
 	left: 47%;
-	top: 24%;
+	top: 22%;
 	color: rgb(255,255,255);
 	-webkit-animation: updown 1s infinite;
 }

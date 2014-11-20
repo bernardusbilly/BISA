@@ -13,6 +13,13 @@
 		left: -75% !important;
 		width: 250% !important;
 	}
+	#info-to-hover {
+		left: 46%;
+	}
+	#officer-header {
+		left: 0%;
+		font-size: 14px;
+	}
 	.officer-section {
 		min-height: 120%;
 	}
@@ -44,14 +51,11 @@
 	.events-section,
 	.gallery-section,
 	.contact-section {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
-	#about-left,
 	#about-right,
 	#events-mobile,
-	#events-right,
-	#gallery-left,
 	#gallery-right,
 	#contact-left,
 	#contact-mobile,
@@ -70,6 +74,9 @@
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
+	#officer-header {
+		left: 33.5%;
+	}
 	#photoset-info {
 		width: 500px;
 		height: 58px;
@@ -90,8 +97,8 @@
 	.events-section,
 	.gallery-section,
 	.contact-section {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 	#about-left,
 	#about-right,
@@ -108,6 +115,9 @@
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+	#officer-header {
+		left: 36%;
+	}
 	#photoset-info {
 		width: 700px;
 		height: 80px;
@@ -125,8 +135,8 @@
 	.events-section,
 	.gallery-section,
 	.contact-section {
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: 10%;
+		padding-bottom: 10%;
 	}
 	#about-right {
 		padding-top: 50px;
@@ -154,6 +164,9 @@
 	}
 }
 @media (min-width: 1200px) {
+	#about-left {
+		padding-top: 20px;
+	}
 	#photoset-info {
 		width: 800px;
 		height: 95px;
@@ -162,10 +175,6 @@
 	#photoset-info > .info {
 		font-size: 12px;
 		padding: 10px 20px;
-	}
-	.about-section {
-		padding-top: 200px;
-		padding-bottom: 200px;
 	}
 	#events-right {
 		padding-top: 50px;
