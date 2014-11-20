@@ -8,6 +8,7 @@
 .img-overlay {
 	display: inline-block;
 	position: relative;
+	overflow: hidden;
 }
 .img-overlay > img {
 	transition: 0.2s;
