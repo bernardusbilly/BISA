@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 	$('.img-compound').each(function() {
 		var image_lead = $(this).find("img:first");
+		image_lead.attr("header", "1")
 
 		$(this).css("height", image_lead.height());
 
