@@ -114,7 +114,6 @@
 
 .img-compound {
 	cursor: pointer;
-	overflow: hidden;
 	position: relative;
 }
 .img-compound > img {
