@@ -3,14 +3,6 @@ $(document).ready(function(){
 	console.log("Playimage.js Ready");
 
 	$('.img-compound').each(function() {
-		var image_lead = $(this).find("img:first");
-
-		var width = image_lead.width()
-		var height = image_lead.height()
-
-		$(this).css("width", width);
-		$(this).css("height", height);
-
 		var counter = 0;
 		var total_image = 0;
 
