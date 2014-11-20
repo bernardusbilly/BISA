@@ -3,6 +3,8 @@ $(document).ready(function(){
 	console.log("Playimage.js Ready");
 
 	$('.img-compound').each(function() {
+		var image_lead = $(this).find("img:first");
+
 		var counter = 0;
 		var total_image = 0;
 
