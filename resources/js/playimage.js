@@ -24,13 +24,6 @@ $(window).load(function(){
 			$(this).css("transition", "1s");
 		});
 
-		// setup hover condition
-		$(this).hover(function() {
-			$(this).find(".photo-arrow").css("visibility", "hidden");
-		}, function() {
-			$(this).find(".photo-arrow").css("visibility", "visible");
-		});
-
 		// setup click function
 		$(this).click(function() {
 			images = $(this).find("img");

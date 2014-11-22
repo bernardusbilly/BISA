@@ -20,9 +20,6 @@
 		left: 0%;
 		font-size: 14px;
 	}
-	.officer-section {
-		min-height: 120%;
-	}
 	#photoset-info {
 		width: 350px;
 		height: 80px;
@@ -42,31 +39,27 @@
 	.h1 {
 		font-size: 40px;
 	}
-	#infoToHover {
-		top: 10%;
-		padding: 5px;
-		font-size: 10px;
-	}
 	.about-section,
-	.events-section,
-	.gallery-section,
-	.contact-section {
+	.gallery-section {
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
+	.contact-section {
+		padding-top: 5%;
+		padding-bottom: 30%;
+	}
 	#about-right,
-	#events-mobile,
-	#gallery-right,
+	#gallery-left,
 	#contact-left,
 	#contact-mobile,
 	#contact-right {
-		padding-top: 50px;
+		padding-top: 40px;
 	}
 	#officer-header {
 		padding: 5px 10px;
 	}
 	.officer-section {
-		padding-top: 40%;
+		padding-top: 30%;
 		min-height: 100%;
 	}
 	.footer-section {
@@ -94,23 +87,21 @@
 		font-size: 6px;
 	}
 	.about-section,
-	.events-section,
-	.gallery-section,
-	.contact-section {
+	.gallery-section {
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
+	.contact-section {
+		padding-top: 5%;
+		padding-bottom: 15%;
+	}
 	#about-left,
 	#about-right,
-	#events-mobile,
-	#events-left,
-	#events-right,
 	#gallery-left,
 	#gallery-right,
 	#contact-left,
 	#contact-right,
-	#contact-mobile,
-	#contact-right {
+	#contact-mobile {
 		padding-top: 20px;
 	}
 }
@@ -132,7 +123,6 @@
 		font-size: 20px;
 	}
 	.about-section,
-	.events-section,
 	.gallery-section,
 	.contact-section {
 		padding-top: 10%;
@@ -141,23 +131,11 @@
 	#about-right {
 		padding-top: 50px;
 	}
-	#events-mobile {
-		padding-top: 80px;
-	}
 	#gallery-right {
-		padding-top: 80px;
+		padding-top: 50px;
 	}
 	#contact-left {
 		padding-top: 80px;
-	}
-	#events-left {
-		padding-top: 60px;
-	}
-	#events-right {
-		padding-top: 80px;
-	}
-	#gallery-left {
-		padding-top: 120px;
 	}
 	#contact-right{
 		padding-top: 40px;
@@ -176,10 +154,7 @@
 		font-size: 12px;
 		padding: 10px 20px;
 	}
-	#events-right {
+	#gallery-right {
 		padding-top: 50px;
-	}
-	#gallery-left {
-		padding-top: 80px;
 	}
 }

@@ -24,6 +24,11 @@
     <link href="resources/css/bisa-responsive.css" rel="stylesheet">
     <link href="resources/css/playimage.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Abel|Raleway:500' rel='stylesheet' type='text/css'>
+    <link href="resources/css/swiper.css" rel="stylesheet">
+
+    <!-- Swiper CSS and Javascript -->
+    <link href="resources/swiper/dist/idangerous.swiper.css" rel="stylesheet">
+    <script defer src="resources/swiper/dist/idangerous.swiper.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -66,16 +71,13 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#events">Events</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li id="nav-officer">
                         <a class="page-scroll" href="#officer">Officer</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,26 +86,104 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container" style="width: 100%; padding: 0;">
-            <div class="row" style="margin: 0;">
-                <div class="img-compound">
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--First Slide-->
+                <div class="swiper-slide" style="overflow: hidden;"> 
+                    <!-- Any HTML content of the first slide goes here -->
                     <img class="intro-photo" src="resources/img/bisa_2014.jpg">
-                    <img class="intro-photo" src="resources/img/bisa_2013.jpg"> 
-                    <img class="intro-photo" src="resources/img/bisa_2012.jpg"> 
+                    <button type="button" class="rsvp btn btn-primary" data-toggle="modal" data-target="#rspv-modal">RSVP</button>
+                    <button type="button" class="location btn btn-primary" data-toggle="modal" data-target="#event-modal"><span class="glyphicon glyphicon-globe"></span></button>
                 </div>
-                <div class="arrow-down" style="z-index: 1">
-                    <span class="glyphicon glyphicon-arrow-down" style="color: rgba(255,255,255,0.7)"></span>
+                
+                <!--Second Slide-->
+                <div class="swiper-slide" style="overflow: hidden;">
+                    <!-- Any HTML content of the second slide goes here -->
+                    <img class="intro-photo" src="resources/img/bisa_2013.jpg">
+                    <button type="button" class="rsvp btn btn-primary" data-toggle="modal" data-target="#rspv-modal">RSVP</button> 
+                    <button type="button" class="location btn btn-primary" data-toggle="modal" data-target="#event-modal"><span class="glyphicon glyphicon-globe"></span></button>
+                </div>
+              
+                <!--Third Slide-->
+                <div class="swiper-slide" style="overflow: hidden;"> 
+                   <!-- Any HTML content of the third slide goes here -->
+                   <img class="intro-photo" src="resources/img/bisa_2012.jpg">
+                   <button type="button" class="rsvp btn btn-primary" data-toggle="modal" data-target="#rspv-modal">RSVP</button> 
+                   <button type="button" class="location btn btn-primary" data-toggle="modal" data-target="#event-modal"><span class="glyphicon glyphicon-globe"></span></button>
                 </div>
             </div>
-        </div>
+            <div class="pagination" style="position: absolute; bottom: -180px;">
+            </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="event-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Location</h4>
+          </div>
+          <div class="modal-body">
+            <iframe
+              width="100%"
+              height="450"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBSqyaSMrjj8WvPTM5WO9VyJ9YI07BTeSs
+                &q=Memorial+Glade,Berkeley+CA&zoom=17">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="rspv-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Reservation</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group" style="width: 100%;">
+                <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group" style="width: 100%;">
+                <label for="inputPassword3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
+                </div>
+              </div>
+              <div class="form-group" style="width: 100%;">
+                <label for="inputPassword3" class="col-sm-2 control-label">Phone</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPhoneNumber" placeholder="(xxx)-xxx-xxx">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+            <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
                 <div id="about-left" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="h1">BISA.</div>
+                    <div class="h1">
+                        BISA.
+                    </div>
                     The Berkeley Indonesian Student Association (BISA) was established in 1991. Over the past two decades, it has gone through a series of changes with the purpose of creating stronger friendships between Indonesian students in the UC Berkeley campus.
                     
                     <br><br>
@@ -113,26 +193,8 @@
                     <div class="img-compound">
                         <img src="resources/img/bisa-officer2014.jpg">
                         <img src="resources/img/bisa-officer2013.jpg">
-                        <span class='glyphicon glyphicon-chevron-right photo-arrow' style='position: absolute; font-size: 60px; left: 45%; top: 45%; color: rgba(255,255,255,0.7);'></span>
+                        <span class='glyphicon glyphicon-chevron-right photo-arrow' style='position: absolute; font-size: 30px; left: 90%; top: 85%; color: rgba(255,255,255,0.8);'></span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="events-section">
-        <div class="container">
-            <div class="row">
-                <div id="events-left" class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-                    <img src="resources/img/nusantara.jpg" style="width: 50%;">
-                </div>
-                <div id="events-right" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="h1">Events</div>
-                    Our upcoming event is <a href="#" target="_blank">Nusantara</a>. An event where we share our culture to the world. We will be having Music Festival by singer from Indonesia and also students in the Bay Area. We will also have traditional foods from Indonesia and many more.
-                </div>
-                <div id="events-mobile" class="hidden-lg hidden-md col-sm-12 col-xs-12">
-                    <img src="resources/img/nusantara.jpg" style="width: 100%;">
                 </div>
             </div>
         </div>
@@ -143,49 +205,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div id="gallery-left" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="h1">Gallery.</div>
-                    We held events. We documented it. Here is the full <a href="http://bisa.berkeley.edu/gallery/" target="_blank">Gallery</a> of all the events that we held. Click the picture for additional preview photos.
-                </div>
-                <div id="gallery-right" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="img-compound">
-                        <img src="resources/img/bisa_2014_2.jpg">
-                        <img src="resources/img/bisa_2013.jpg">
-                        <img src="resources/img/bisa_2012.jpg">
-                        <span class='glyphicon glyphicon-chevron-right photo-arrow' style='position: absolute; font-size: 60px; left: 45%; top: 45%; color: rgba(255,255,255,0.7);'></span>
+                    <div id="gallery-mobile" class="hidden-lg hidden-md show-sm show-xs">
+                        <div class="h1">Gallery.</div>
+                        We held events. We documented it. Here is the full <a href="http://bisa.berkeley.edu/gallery/" target="_blank">Gallery</a> of all the events that we held. Click the picture for additional preview photos.
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="contact-left" class="col-lg-6 col-md-6 hidden-sm hidden-xs">
-                    <img src="resources/img/contact.jpg" style="width: 100%;">
-                </div>
-                <div id="contact-right" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="h1">Contact.</div>
-                    Please don't hesitate to contact us with anything!<br><br>
-                    <table class="table">
-                        <tr>
-                            <td> Email:
-                            <td> <input style="width: 85%; padding: 0 8px;" type="text" placeholder="Email">
-                        </tr>
-                        <tr>
-                            <td> Message:
-                            <td> <textarea style="width: 85%; height: 100px; border: 1px solid #CCC; border-radius: 5px; padding: 5px 8px; resize: none;" placeholder="Message"></textarea>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><button type="button" class="btn btn-primary">Submit</button>
-                        </tr>
-                    </table>
-                </div>
-                <div id="contact-mobile" class="hidden-lg hidden-md col-sm-12 col-xs-12">
-                    <img src="resources/img/contact.jpg" style="width: 100%;">
+                    <div id="gallery-left" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="img-compound">
+                            <img src="resources/img/bisa_2014_2.jpg">
+                            <img src="resources/img/bisa_2013.jpg">
+                            <img src="resources/img/bisa_2012.jpg">
+                            <span class='glyphicon glyphicon-chevron-right photo-arrow' style='position: absolute; font-size: 30px; left: 90%; top: 85%; color: rgba(255,255,255,0.8);'></span>
+                        </div>
+                    </div>
+                    <div id="gallery-right" class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                        <div class="h1">Gallery.</div>
+                        We held events. We documented it. Here is the full <a href="http://bisa.berkeley.edu/gallery/" target="_blank">Gallery</a> of all the events that we held. Click the picture for additional preview photos.
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,6 +316,38 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="contact-left" class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                    <img src="resources/img/contact.jpg" style="width: 100%;">
+                </div>
+                <div id="contact-right" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="h1">Contact.</div>
+                    Please don't hesitate to contact us with anything!<br><br>
+                    <table class="table">
+                        <tr>
+                            <td> Email:
+                            <td> <input style="width: 85%; padding: 0 8px;" type="text" placeholder="Email">
+                        </tr>
+                        <tr>
+                            <td> Message:
+                            <td> <textarea style="width: 85%; height: 100px; border: 1px solid #CCC; border-radius: 5px; padding: 5px 8px; resize: none;" placeholder="Message"></textarea>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="button" class="btn btn-primary">Submit</button>
+                        </tr>
+                    </table>
+                </div>
+                <div id="contact-mobile" class="hidden-lg hidden-md col-sm-12 col-xs-12">
+                    <img src="resources/img/contact.jpg" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <section id="footer" class="footer-section">
         <div class="container">
@@ -305,6 +372,9 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="resources/js/jquery.easing.min.js"></script>
     <script src="resources/js/scrolling-nav.js"></script>
+
+    <!-- Swiper Javascript -->
+    <script src="resources/js/swiper.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="resources/js/bisa.js"></script>
