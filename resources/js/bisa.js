@@ -76,5 +76,12 @@ $(window).load(function() {
 		} else {
 			$('.arrow-down').css("bottom", "0");
 		};
+
+		if ($(window).scrollTop() + $(window).height() >= 0.85 * $(document).height()) {
+			$('body').css("background-image", "url(./resources/img/bisa_2013.jpg)");
+		} else { 
+			$('body').css("background-image", "url(./resources/img/bisa_2014.jpg)");
+		}
+
 	});
 });
