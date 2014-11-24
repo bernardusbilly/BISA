@@ -1,33 +1,31 @@
-$(function(){
+$(window).load(function() {
+  $(function() {
+  setSwiperHeight();
 
-	setSwiperHeight();
+  $(window).resize(function() {
+      setSwiperHeight();
+    });
+  
+    var mySwiper = $('.swiper-container').swiper({
+      //Your options here:
+      autoplay: 5000,
+      speed: 500,
+      mode:'horizontal',
+      loop: true,
+      grabCursor: true,
+      pagination: ".pagination",
+      paginationClickable: true,
+      createPagination: true,
+      resizeReInit: true
+      //etc..
+    });
+  })
 
-	$(window).resize(function() {
-  		setSwiperHeight();
-  	});
-	
-  	var mySwiper = $('.swiper-container').swiper({
-    	//Your options here:
-    	autoplay: 5000,
-    	speed: 500,
-    	mode:'horizontal',
-    	loop: true,
-    	grabCursor: true,
-    	pagination: ".pagination",
-    	paginationClickable: true,
-    	createPagination: true,
-    	resizeReInit: true
-    	//etc..
-  	});
+  function setSwiperHeight() {
+    $('.swiper-container').width($('.intro-section').width());
+    $('.swiper-container').height($('.intro-photo').height());
 
-
-
-})
-
-function setSwiperHeight() {
-	$('.swiper-container').width($('.intro-section').width());
-	$('.swiper-container').height($('.intro-photo').height());
-
-	$('.swiper-slide').width($('.intro-section').width());
-	$('.swiper-slide').height($('.intro-section').height());
-}
+    $('.swiper-slide').width($('.intro-section').width());
+    $('.swiper-slide').height($('.intro-section').height());
+  }
+});
