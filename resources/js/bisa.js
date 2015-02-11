@@ -78,7 +78,7 @@ $(window).load(function() {
 		};
 
 		if ($(window).scrollTop() + $(window).height() >= 0.85 * $(document).height()) {
-			$('body').css("background-image", "url(./resources/img/bisa_2013.jpg)");
+			$('body').css("background-image", "url(./resources/img/berkeley-map.png)");
 			$('body').css("background-size", "cover");
 			$('body').css("background-position", "center");
 		} else { 

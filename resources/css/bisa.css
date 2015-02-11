@@ -211,6 +211,10 @@ a:hover{
 .navbar-default .navbar-nav>.active>a:focus {
 	background-color: #FDB515;
 }
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
+	color: #FFF;
+}
 .navbar-fixed-top {
 	transition: 0.5s;
 }
@@ -218,4 +222,7 @@ a:hover{
 	font-size: 60px;
 	color: #444;
 }
-
+.carousel-control {
+	font-size: 200px;
+}
+.
