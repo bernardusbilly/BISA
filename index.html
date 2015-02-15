@@ -71,7 +71,8 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://www.peeplogic.com/BISA-gallery/gallery-2/">Gallery</a>
+                        <a class="page-scroll" href="#gallery">Gallery</a>
+                        <!-- http://www.peeplogic.com/BISA-gallery/gallery-2/ -->
                     </li>
                     <li id="nav-officer">
                         <a class="page-scroll" href="#officer">Officer</a>
@@ -80,7 +81,17 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <ul id="socmed-nav" class="nav navbar-nav">
+                    <li>
+                        <a href="https://www.facebook.com/groups/BISABerkeley/" target="_blank"><img class="soc-logo" src="resources/img/logo/fb_50.png"></a>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com/BerkeleyBisa" target="_blank"><img class="soc-logo" src="resources/img/logo/instagram.png"></a>
+                    </li>
+                </ul>
             </div>
+
+
         </div>
     </nav>
 
@@ -120,7 +131,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="event-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -209,46 +220,78 @@
     </nav>
 
     <!-- Gallery Section -->
-    <section class="gallery-section">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="h1" style="padding-bottom: 50px;">
-                    Gallery
-                </div>
-                <div id="galleryCarousel" class="carousel slide">
-                <!--
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
-                -->
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                    <div class="active item">
-                        <div class="row">
-                            <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                            <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-                            <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-                            <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 hidden-md hidden-sm hidden-xs">
-                        </div>
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="h1" style="padding-bottom: 50px;">
+                        Gallery
                     </div>
-                    <div class="item">
-                        <div class="row">
-                            <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-                            <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-                            <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs">
-                            <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                    <div id="galleryCarousel" class="carousel slide">
+                    <!--
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                    -->
+                      <!-- Carousel items -->
+                      <div class="carousel-inner">
+                        <div class="active item">
+                            <div class="row">
+
+                                <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 col-md-4 col-sm-12 col-xs-12" data-toggle="modal" data-target="#photo-modal">
+                                <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs" data-toggle="modal" data-target="#photo-modal">
+                                <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs" data-toggle="modal" data-target="#photo-modal">
+                                <img src="resources/img/bisa-officer2014.jpg" class="col-lg-3 hidden-md hidden-sm hidden-xs" data-toggle="modal" data-target="#photo-modal">
+                            </div>
                         </div>
+                        <div class="item">
+                            <div class="row">
+                                <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 col-md-4 col-sm-12 col-xs-12" data-toggle="modal" data-target="#photo2-modal">
+                                <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs" data-toggle="modal" data-target="#photo2-modal">
+                                <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 col-md-4 hidden-sm hidden-xs" data-toggle="modal" data-target="#photo2-modal">
+                                <img src="resources/img/bisa-officer2013.jpg" class="col-lg-3 hidden-md hidden-sm hidden-xs" data-toggle="modal" data-target="#photo2-modal">
+                            </div>
+                        </div>
+                      </div>
+                      <!-- Carousel nav -->
+                      <a class="carousel-control left" href="#galleryCarousel" data-slide="prev">&lsaquo;</a>
+                      <a class="carousel-control right" href="#galleryCarousel" data-slide="next">&rsaquo;</a>
                     </div>
-                  </div>
-                  <!-- Carousel nav -->
-                  <a class="carousel-control left" href="#galleryCarousel" data-slide="prev">&lsaquo;</a>
-                  <a class="carousel-control right" href="#galleryCarousel" data-slide="next">&rsaquo;</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="photo-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">BISA Officer 2014</h4>
+          </div>
+          <div class="modal-body">
+            <img src="resources/img/bisa-officer2014.jpg" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="photo2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">BISA Officer 2013</h4>
+          </div>
+          <div class="modal-body">
+            <img src="resources/img/bisa-officer2013.jpg" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Officer Section -->
     <section id="officer" class="officer-section">
@@ -374,6 +417,7 @@
 
     <!-- Blank Section -->
     <nav class="blank-section">
+
     </nav>
 
     <!-- Footer Section -->
@@ -381,11 +425,18 @@
         <div class="container">
             <div class="row">
                 <div id="footer-left" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <a href="https://www.facebook.com/groups/BISABerkeley/" target="_blank"><img class="soc-logo" src="resources/img/logo/fb_50.png"></a>
-                    <a href="http://instagram.com/BerkeleyBisa" target="_blank"><img class="soc-logo" src="resources/img/logo/instagram.png"></a>
+                    <iframe
+                      width="100%"
+                      height="200"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBSqyaSMrjj8WvPTM5WO9VyJ9YI07BTeSs
+                        &q=Memorial+Glade,Berkeley+CA&zoom=17">
+                    </iframe>
                 </div>
                 <div id="footer-right" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    Copyright &copy 2014 Berkeley Indonesian Student Association
+                    Copyright &copy 2014 Berkeley Indonesian Student Association<br>
+                    <a href="https://www.facebook.com/groups/BISABerkeley/" target="_blank"><img class="soc-logo" src="resources/img/logo/fb_50.png"></a>
+                    <a href="http://instagram.com/BerkeleyBisa" target="_blank"><img class="soc-logo" src="resources/img/logo/instagram.png"></a>
                 </div>
             </div>
         </div>

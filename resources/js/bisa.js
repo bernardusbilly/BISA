@@ -53,7 +53,7 @@ $(window).load(function() {
 	if ($(window).scrollTop() + $(window).height() >= $(document).height() - 20) {
 		$('.footer-section').css("bottom", "0px");
 	} else {
-		$('.footer-section').css("bottom", "-100px");
+		$('.footer-section').css("bottom", "-300px");
 	}
 
 	$(window).scroll(function() {
@@ -68,7 +68,7 @@ $(window).load(function() {
 		if ($(window).scrollTop() + $(window).height() >= $(document).height() - 20) {
 			$('.footer-section').css("bottom", "0px");
 		} else {
-			$('.footer-section').css("bottom", "-100px");
+			$('.footer-section').css("bottom", "-300px");
 		}
 
 		if($(window).scrollTop() > 50) {
@@ -77,8 +77,8 @@ $(window).load(function() {
 			$('.arrow-down').css("bottom", "0");
 		};
 
-		if ($(window).scrollTop() + $(window).height() >= 0.85 * $(document).height()) {
-			$('body').css("background-image", "url(./resources/img/berkeley-map.png)");
+		if ($(window).scrollTop() + $(window).height() >= 0.75 * $(document).height()) {
+			$('body').css("background-image", "url(./resources/img/bisa_2013.jpg)");
 			$('body').css("background-size", "cover");
 			$('body').css("background-position", "center");
 		} else { 

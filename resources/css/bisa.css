@@ -185,8 +185,21 @@ a:hover{
 .soc-logo {
 	width: 30px;
 }
+#footer-left > a {
+	margin: 0 10px;
+}
 #footer-right {
 	padding-top: 10px;
+}
+#galleryCarousel img {
+	cursor: pointer;
+}
+#socmed-nav {
+	float: right;
+}
+#socmed-nav > li > a {
+	padding-top: 10px;
+	height: 50px;
 }
 
 /* customization-bootstrap */
@@ -223,6 +236,5 @@ a:hover{
 	color: #444;
 }
 .carousel-control {
-	font-size: 200px;
+	width: 5%;
 }
-.
