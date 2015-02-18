@@ -59,14 +59,17 @@
 		padding: 5px 10px;
 	}
 	.officer-section {
-		padding-top: 30%;
-		min-height: 100%;
+		padding-top: 10%;
+		min-height: 70%;
 	}
 	.footer-section {
 		padding-top: 15px;
 	}
 	#socmed-nav {
 		float: left;
+	}
+	.blank-section {
+		min-height: 20%;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -106,6 +109,9 @@
 	#contact-right,
 	#contact-mobile {
 		padding-top: 20px;
+	}
+	.blank-section {
+		min-height: 30%;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {

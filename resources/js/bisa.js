@@ -78,13 +78,21 @@ $(window).load(function() {
 		};
 
 		if ($(window).scrollTop() + $(window).height() >= 0.75 * $(document).height()) {
-			$('body').css("background-image", "url(./resources/img/bisa_2013.jpg)");
-			$('body').css("background-size", "cover");
-			$('body').css("background-position", "center");
+			$('#background-html').css("background", "url(./resources/img/bisa_2013.jpg)");
+			$('#background-html').css("background-position", "center");
+			$('#background-html').css("background-repeat", "no-repeat");
+			$('#background-html').css("background-attachment", "fixed");
+			$('#background-html').css("background-size", "cover");
+			$('#background-html').css("top", "0");
+
 		} else { 
-			$('body').css("background-image", "url(./resources/img/bisa_2014.jpg)");
-			$('body').css("background-size", "cover");
-			$('body').css("background-position", "center");
+			var x = -$(window).scrollTop()*0.05+20;
+			console.log(x);
+			$('#background-html').css("background", "url(./resources/img/bisa_2014.jpg)");
+			$('#background-html').css("background-size", "150%");
+			$('#background-html').css("background-position", "center");
+			$('#background-html').css("background-repeat", "no-repeat");
+			$('#background-html').css("top", x);
 		}
 
 	});

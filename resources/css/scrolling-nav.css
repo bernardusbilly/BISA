@@ -59,7 +59,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .blank-section {
-    min-height: 75%;
+    min-height: 60%;
     background: rgba(0,0,0,0);
 }
 
