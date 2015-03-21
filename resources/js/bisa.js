@@ -96,4 +96,11 @@ $(window).load(function() {
 		}
 
 	});
+
+	$('.photo-instagram').click(function() {
+		console.log("photo-instagram clicked.");
+		var src = $(this).attr("src");
+		$('.image-source').attr("src", src);
+		$('.image-source').css("width", "100%");
+	});
 });
